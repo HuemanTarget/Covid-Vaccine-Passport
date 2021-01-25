@@ -8,17 +8,27 @@
 import SwiftUI
 
 struct StateView: View {
-    
+    var states: [StateInfo] = []
     
     var body: some View {
-        Text("State Vaccine Info")
+        List(states) { item in
+            VStack(alignment: .leading) {
+                Text(item.state)
+                Text(item.category)
+                    .font(.subheadline)
+                Link("Website",
+                     destination: URL(string: item.link)!)
+                    .font(.subheadline)
+                    .foregroundColor(.red)
+            }
+        }
     }
     
     
     
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
-            StateView()
+            StateView(states: stateData)
         }
     }
 }
