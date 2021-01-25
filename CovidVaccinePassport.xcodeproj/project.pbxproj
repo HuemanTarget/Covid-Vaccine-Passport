@@ -13,9 +13,10 @@
 		4EF8169E25BE7718002DC976 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EF8169D25BE7718002DC976 /* Preview Assets.xcassets */; };
 		4EF816A025BE7718002DC976 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF8169F25BE7718002DC976 /* Persistence.swift */; };
 		4EF816A325BE7718002DC976 /* CovidVaccinePassport.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4EF816A125BE7718002DC976 /* CovidVaccinePassport.xcdatamodeld */; };
-		4EF816AC25BE7A76002DC976 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF816AB25BE7A76002DC976 /* State.swift */; };
-		4EF816B025BE7B1B002DC976 /* Passport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF816AF25BE7B1B002DC976 /* Passport.swift */; };
-		4EF816B425BE7B4E002DC976 /* CDC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF816B325BE7B4E002DC976 /* CDC.swift */; };
+		4EF816AC25BE7A76002DC976 /* StateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF816AB25BE7A76002DC976 /* StateView.swift */; };
+		4EF816B025BE7B1B002DC976 /* PassportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF816AF25BE7B1B002DC976 /* PassportView.swift */; };
+		4EF816B425BE7B4E002DC976 /* CDCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF816B325BE7B4E002DC976 /* CDCView.swift */; };
+		4EF816C125BF735E002DC976 /* StateInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF816C025BF735E002DC976 /* StateInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +28,10 @@
 		4EF8169F25BE7718002DC976 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		4EF816A225BE7718002DC976 /* CovidVaccinePassport.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CovidVaccinePassport.xcdatamodel; sourceTree = "<group>"; };
 		4EF816A425BE7718002DC976 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4EF816AB25BE7A76002DC976 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
-		4EF816AF25BE7B1B002DC976 /* Passport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Passport.swift; sourceTree = "<group>"; };
-		4EF816B325BE7B4E002DC976 /* CDC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDC.swift; sourceTree = "<group>"; };
+		4EF816AB25BE7A76002DC976 /* StateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateView.swift; sourceTree = "<group>"; };
+		4EF816AF25BE7B1B002DC976 /* PassportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassportView.swift; sourceTree = "<group>"; };
+		4EF816B325BE7B4E002DC976 /* CDCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDCView.swift; sourceTree = "<group>"; };
+		4EF816C025BF735E002DC976 /* StateInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +64,9 @@
 		4EF8169525BE7716002DC976 /* CovidVaccinePassport */ = {
 			isa = PBXGroup;
 			children = (
+				4EF816B625BF7244002DC976 /* Models */,
 				4EF816AE25BE7AFA002DC976 /* Views */,
 				4EF8169625BE7716002DC976 /* CovidVaccinePassportApp.swift */,
-				4EF8169825BE7716002DC976 /* ContentView.swift */,
 				4EF8169A25BE7718002DC976 /* Assets.xcassets */,
 				4EF8169F25BE7718002DC976 /* Persistence.swift */,
 				4EF816A425BE7718002DC976 /* Info.plist */,
@@ -85,11 +87,20 @@
 		4EF816AE25BE7AFA002DC976 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				4EF816AB25BE7A76002DC976 /* State.swift */,
-				4EF816AF25BE7B1B002DC976 /* Passport.swift */,
-				4EF816B325BE7B4E002DC976 /* CDC.swift */,
+				4EF816AB25BE7A76002DC976 /* StateView.swift */,
+				4EF816AF25BE7B1B002DC976 /* PassportView.swift */,
+				4EF816B325BE7B4E002DC976 /* CDCView.swift */,
+				4EF8169825BE7716002DC976 /* ContentView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		4EF816B625BF7244002DC976 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4EF816C025BF735E002DC976 /* StateInfo.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,10 +175,11 @@
 				4EF816A025BE7718002DC976 /* Persistence.swift in Sources */,
 				4EF816A325BE7718002DC976 /* CovidVaccinePassport.xcdatamodeld in Sources */,
 				4EF8169925BE7716002DC976 /* ContentView.swift in Sources */,
-				4EF816B025BE7B1B002DC976 /* Passport.swift in Sources */,
-				4EF816AC25BE7A76002DC976 /* State.swift in Sources */,
+				4EF816B025BE7B1B002DC976 /* PassportView.swift in Sources */,
+				4EF816AC25BE7A76002DC976 /* StateView.swift in Sources */,
 				4EF8169725BE7716002DC976 /* CovidVaccinePassportApp.swift in Sources */,
-				4EF816B425BE7B4E002DC976 /* CDC.swift in Sources */,
+				4EF816B425BE7B4E002DC976 /* CDCView.swift in Sources */,
+				4EF816C125BF735E002DC976 /* StateInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
