@@ -14,7 +14,7 @@ struct ContentView: View {
     var body: some View {
         TabView {
             
-            StateView()
+            StateView(states: stateData)
                 .tabItem {
                     Image(systemName: "info.circle")
                     Text("State Vaccine Info")
@@ -34,22 +34,6 @@ struct ContentView: View {
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
             ContentView()
-        }
-    }
-}
-
-struct StatesView: View {
-    var states: [StateInfo] = []
-    
-    var body: some View {
-        NavigationView {
-            List(states) { item in
-                VStack(alignment: .leading) {
-                    Text(item.state)
-                        
-                }
-            }
-            .navigationBarTitle(Text("State Vaccine Info"))
         }
     }
 }

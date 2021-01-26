@@ -53,7 +53,7 @@ let stateData = [
     StateInfo(state: "California", category: "Mariposa County Vaccine Information", link: "http://www.mariposacounty.org/2466/COVID-19-Vaccination"),
     StateInfo(state: "California", category: "Mendocino County Vaccine Information", link: "https://www.mendocinocounty.org/community/novel-coronavirus/covid-19-vaccinations"),
     StateInfo(state: "California", category: "Merced County Vaccine Information", link: "https://vaccinatemercedcounty.com/"),
-    StateInfo(state: "California", category: "Modoc County Vaccine Information", link: "- http://modochealthservices.org/corona-virus"),
+    StateInfo(state: "California", category: "Modoc County Vaccine Information", link: "http://modochealthservices.org/corona-virus"),
     StateInfo(state: "California", category: "Mono County Vaccine Information", link: "https://coronavirus.monocounty.ca.gov/pages/vaccinations"),
     StateInfo(state: "California", category: "Monterey County Vaccine Information", link: "https://www.co.monterey.ca.us/government/departments-a-h/health/diseases/2019-novel-coronavirus-covid-19/vaccination-registration"),
     StateInfo(state: "California", category: "Napa County Vaccine Information", link: "https://www.countyofnapa.org/3096/COVID-19-Vaccines"),
@@ -131,7 +131,7 @@ let stateData = [
     StateInfo(state: "Oklahoma", category: "Vaccine Information", link: "https://oklahoma.gov/covid19/vaccine-information.html"),
     StateInfo(state: "Oregon", category: "Vaccine Information", link: "https://covidvaccine.oregon.gov/"),
     StateInfo(state: "Oregon", category: "Benton County Vaccine Information", link: "https://www.co.benton.or.us/covid19/page/covid-19-vaccine"),
-    StateInfo(state: "Oregon", category: "Clackamas County Vaccine Information", link: "- https://www.clackamas.us/coronavirus/vaccine"),
+    StateInfo(state: "Oregon", category: "Clackamas County Vaccine Information", link: "https://www.clackamas.us/coronavirus/vaccine"),
     StateInfo(state: "Oregon", category: "Clatsop County Vaccine Information", link: "https://www.co.clatsop.or.us/publichealth/page/vaccine-information-faqs"),
     StateInfo(state: "Oregon", category: "Columbia County Vaccine Information", link: "https://www.columbiacountyor.gov/departments/PublicHealth/COVID-19Vaccine"),
     StateInfo(state: "Oregon", category: "Coos County Vaccine Information", link: "https://cooshealthandwellness.org/public-health/covid-19-vaccine-information/#1611354774505-e706b5ca-a38c"),
@@ -171,6 +171,6 @@ let stateData = [
     StateInfo(state: "Washington", category: "Vaccine Locations By County", link: "https://www.doh.wa.gov/YouandYourFamily/Immunization/VaccineLocations"),
     StateInfo(state: "West Virginia", category: "Vaccine Information", link: "https://dhhr.wv.gov/COVID-19/Pages/Vaccine.aspx"),
     StateInfo(state: "Wisconsin", category: "Vaccine Information", link: "https://www.dhs.wisconsin.gov/covid-19/vaccine.htm"),
-    StateInfo(state: "Wyoming", category: "Vaccine Information", link: "ttps://health.wyo.gov/publichealth/immunization/wyoming-covid-19-vaccine-information/"),
+    StateInfo(state: "Wyoming", category: "Vaccine Information", link: "https://health.wyo.gov/publichealth/immunization/wyoming-covid-19-vaccine-information/"),
 
 ]
