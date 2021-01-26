@@ -12,7 +12,8 @@ struct ContentView: View {
     
     
     var body: some View {
-        TabView(selection: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Selection@*/.constant(1)/*@END_MENU_TOKEN@*/) {
+        TabView {
+            
             StateView()
                 .tabItem {
                     Image(systemName: "info.circle")
@@ -30,12 +31,27 @@ struct ContentView: View {
                 }
         }
     }
-    
-    
-    
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
             ContentView()
         }
     }
 }
+
+struct StatesView: View {
+    var states: [StateInfo] = []
+    
+    var body: some View {
+        NavigationView {
+            List(states) { item in
+                VStack(alignment: .leading) {
+                    Text(item.state)
+                        
+                }
+            }
+            .navigationBarTitle(Text("State Vaccine Info"))
+        }
+    }
+}
+
+

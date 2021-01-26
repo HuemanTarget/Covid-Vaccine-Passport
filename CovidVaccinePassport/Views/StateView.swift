@@ -11,16 +11,19 @@ struct StateView: View {
     var states: [StateInfo] = []
     
     var body: some View {
-        List(states) { item in
-            VStack(alignment: .leading) {
-                Text(item.state)
-                Text(item.category)
-                    .font(.subheadline)
-                Link("Website",
-                     destination: URL(string: item.link)!)
-                    .font(.subheadline)
-                    .foregroundColor(.red)
+        NavigationView {
+            List(states) { item in
+                VStack(alignment: .leading) {
+                    Text(item.state)
+                    Text(item.category)
+                        .font(.subheadline)
+                    Link("Website",
+                         destination: URL(string: item.link)!)
+                        .font(.subheadline)
+                        .foregroundColor(.red)
+                }
             }
+            .navigationBarTitle(Text("State Vaccine Info"))
         }
     }
     
