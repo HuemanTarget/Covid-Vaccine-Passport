@@ -13,7 +13,7 @@ struct CovidVaccinePassportApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DisclaimeView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

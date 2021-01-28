@@ -17,6 +17,7 @@
 		4EF816B025BE7B1B002DC976 /* PassportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF816AF25BE7B1B002DC976 /* PassportView.swift */; };
 		4EF816B425BE7B4E002DC976 /* CDCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF816B325BE7B4E002DC976 /* CDCView.swift */; };
 		4EF816C125BF735E002DC976 /* StateInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF816C025BF735E002DC976 /* StateInfo.swift */; };
+		4EF816CC25C25F1D002DC976 /* DisclaimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF816CB25C25F1D002DC976 /* DisclaimerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		4EF816AF25BE7B1B002DC976 /* PassportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassportView.swift; sourceTree = "<group>"; };
 		4EF816B325BE7B4E002DC976 /* CDCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDCView.swift; sourceTree = "<group>"; };
 		4EF816C025BF735E002DC976 /* StateInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateInfo.swift; sourceTree = "<group>"; };
+		4EF816CB25C25F1D002DC976 /* DisclaimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclaimerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				4EF816AF25BE7B1B002DC976 /* PassportView.swift */,
 				4EF816B325BE7B4E002DC976 /* CDCView.swift */,
 				4EF8169825BE7716002DC976 /* ContentView.swift */,
+				4EF816CB25C25F1D002DC976 /* DisclaimerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 				4EF816A325BE7718002DC976 /* CovidVaccinePassport.xcdatamodeld in Sources */,
 				4EF8169925BE7716002DC976 /* ContentView.swift in Sources */,
 				4EF816B025BE7B1B002DC976 /* PassportView.swift in Sources */,
+				4EF816CC25C25F1D002DC976 /* DisclaimerView.swift in Sources */,
 				4EF816AC25BE7A76002DC976 /* StateView.swift in Sources */,
 				4EF8169725BE7716002DC976 /* CovidVaccinePassportApp.swift in Sources */,
 				4EF816B425BE7B4E002DC976 /* CDCView.swift in Sources */,

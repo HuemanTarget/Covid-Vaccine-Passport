@@ -9,11 +9,10 @@ import SwiftUI
 
 
 struct ContentView: View {
-    
+    @State private var showModal: Bool = true
     
     var body: some View {
         TabView {
-            
             StateView(states: stateData)
                 .tabItem {
                     Image(systemName: "info.circle")
@@ -30,6 +29,7 @@ struct ContentView: View {
                     Text("CDC Info")
                 }
         }
+        .navigationBarBackButtonHidden(true)
     }
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
@@ -37,5 +37,6 @@ struct ContentView: View {
         }
     }
 }
+
 
 
