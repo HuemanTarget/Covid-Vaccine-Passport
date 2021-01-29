@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E284D2D25C4AE2900BB67D3 /* CDCInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E284D2C25C4AE2900BB67D3 /* CDCInfo.swift */; };
 		4EF8169725BE7716002DC976 /* CovidVaccinePassportApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF8169625BE7716002DC976 /* CovidVaccinePassportApp.swift */; };
 		4EF8169925BE7716002DC976 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF8169825BE7716002DC976 /* ContentView.swift */; };
 		4EF8169B25BE7718002DC976 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EF8169A25BE7718002DC976 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E284D2C25C4AE2900BB67D3 /* CDCInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDCInfo.swift; sourceTree = "<group>"; };
 		4EF8169325BE7716002DC976 /* CovidVaccinePassport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CovidVaccinePassport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EF8169625BE7716002DC976 /* CovidVaccinePassportApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidVaccinePassportApp.swift; sourceTree = "<group>"; };
 		4EF8169825BE7716002DC976 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				4EF816C025BF735E002DC976 /* StateInfo.swift */,
+				4E284D2C25C4AE2900BB67D3 /* CDCInfo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				4EF816A325BE7718002DC976 /* CovidVaccinePassport.xcdatamodeld in Sources */,
 				4EF8169925BE7716002DC976 /* ContentView.swift in Sources */,
 				4EF816B025BE7B1B002DC976 /* PassportView.swift in Sources */,
+				4E284D2D25C4AE2900BB67D3 /* CDCInfo.swift in Sources */,
 				4EF816CC25C25F1D002DC976 /* DisclaimerView.swift in Sources */,
 				4EF816AC25BE7A76002DC976 /* StateView.swift in Sources */,
 				4EF8169725BE7716002DC976 /* CovidVaccinePassportApp.swift in Sources */,

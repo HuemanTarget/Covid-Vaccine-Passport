@@ -8,17 +8,29 @@
 import SwiftUI
 
 struct CDCView: View {
-    
+    var cdc: [CDCInfo] = []
     
     var body: some View {
-        Text("CDC Information")
+        NavigationView {
+            List(cdc) { item in
+                VStack(alignment: .leading) {
+                    Text(item.category)
+                        .font(.title2)
+                    Link("Website",
+                         destination: URL(string: item.link)!)
+                        .font(.subheadline)
+                        .foregroundColor(.red)
+                }
+            }
+            .navigationBarTitle(Text("CDC COVID Info"))
+        }
     }
     
     
     
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
-            CDCView()
+            CDCView(cdc: cdcData)
         }
     }
 }

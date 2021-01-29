@@ -23,7 +23,7 @@ struct ContentView: View {
                     Image(systemName: "wallet.pass")
                     Text("Vaccine Passport")
                 }
-            CDCView()
+            CDCView(cdc: cdcData)
                 .tabItem {
                     Image(systemName: "cross.circle")
                     Text("CDC Info")
