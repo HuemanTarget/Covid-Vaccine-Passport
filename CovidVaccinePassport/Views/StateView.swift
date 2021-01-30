@@ -11,7 +11,10 @@ struct StateView: View {
     var states: [StateInfo] = []
     
     var body: some View {
-        NavigationView {
+        VStack {
+            Text("State Vaccine Info")
+                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                .bold()
             List(states) { item in
                 VStack(alignment: .leading) {
                     Text(item.state)
@@ -23,7 +26,6 @@ struct StateView: View {
                         .foregroundColor(.red)
                 }
             }
-            .navigationBarTitle(Text("State Vaccine Info"))
         }
     }
     

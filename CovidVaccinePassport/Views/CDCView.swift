@@ -11,7 +11,10 @@ struct CDCView: View {
     var cdc: [CDCInfo] = []
     
     var body: some View {
-        NavigationView {
+        VStack {
+            Text("CDC Vaccine Info")
+                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                .bold()
             List(cdc) { item in
                 VStack(alignment: .leading) {
                     Text(item.category)
@@ -22,7 +25,6 @@ struct CDCView: View {
                         .foregroundColor(.red)
                 }
             }
-            .navigationBarTitle(Text("CDC COVID Info"))
         }
     }
     
